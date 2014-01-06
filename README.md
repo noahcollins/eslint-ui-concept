@@ -30,3 +30,5 @@ Intended to evoke tooling and adjustment. The outer hex is rotated to convey a s
 ### Colors
 
 Why purple? It's not used much in the JS tooling space, so it helps keep things visually distinct. If anyone has strong reactions to that one way or another, there are plenty of other colors that would make sense.
+=======
+A concept web UI and docs site for ESLint project
