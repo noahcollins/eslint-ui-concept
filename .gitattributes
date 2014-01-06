@@ -1,0 +1,15 @@
+* text=auto
+
+# Enforce Unix newlines
+*.css text eol=lf
+*.less text eol=lf
+*.sass text eol=lf
+*.html text eol=lf
+*.md text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+
+# Denote binary files
+*.png binary
+*.jpg binary

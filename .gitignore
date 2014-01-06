@@ -1,0 +1,18 @@
+# Packages and build artifacts #
+######################
+/preview/
+/production/
+/node_modules/
+/bower_components/
+/test/
+
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

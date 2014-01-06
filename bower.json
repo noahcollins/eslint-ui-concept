@@ -1,0 +1,22 @@
+{
+  "name": "eslint-ui-concept",
+  "version": "0.0.1",
+  "authors": [
+    "Noah Collins <noah.collins@gmail.com>"
+  ],
+  "description": "A prototype ESLint web UI and docs site",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.0.3",
+    "jquery": "1.10.2"
+  }
+}
