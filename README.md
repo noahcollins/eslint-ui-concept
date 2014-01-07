@@ -9,7 +9,9 @@ Clone this repo, then `npm install` and `bower install` to get up and running.
 
 ## Grunt Tasks
 
-Run `grunt preview` for prototyping. Run `grunt production` task for image optimization, concatenation, file revving, and so on.
+`grunt preview` will build the basic site at `localhost:9000`.
+
+`grunt production` builds the project and does image optimization, concatenation, file revving, and so on. It uses port 9001.
 
 ## To-Do List
 
