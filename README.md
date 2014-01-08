@@ -17,12 +17,9 @@ Clone this repo, then `npm install` and `bower install` to get up and running.
 
 My plans so far. Feel free to add to this list.
 
-2014-01-06
 - Host this project so people can preview it without building it locally.
 - Mock up the documentation browsing experience.
 - Mock up the demo page experience.
-
-2014-01-07
 - Try a concept for rule configuration in the web UI. Probably not manageable do to the sheer number of rules available, but it's worth exploring.
 
 ## The Design
