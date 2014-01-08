@@ -77,10 +77,10 @@ module.exports = function(grunt) {
       }
     },
 
-    // get the scripts inside index.html
+    // get the scripts inside the html files
     'useminPrepare': {
       html: [
-        'production/index.html'
+        'production/*.html'
       ],
       options: {
         dest: 'production',
@@ -91,7 +91,7 @@ module.exports = function(grunt) {
     // update the scripts links to point to the concatenated and minified js/main.js
     usemin: {
       html: [
-        'production/index.html'
+        'production/*.html'
       ],
       options: {
         // this is necessary so that usemin can find the revved css and js files
