@@ -210,23 +210,23 @@ module.exports = function(grunt) {
     //   "parseFiles" : false
     // },
 
-    favicons: {
-      options: {
-        trueColor: true,
-        precomposed: true,
-        appleTouchBackgroundColor: "#e2b2c2",
-        coast: true,
-        windowsTile: true,
-        tileBlackWhite: false,
-        tileColor: 'auto',
-        html: 'production/index.html',
-        HTMLPrefix: '/img/icons/'
-      },
-      icons: {
-        src: 'source/img/favicon.512x512.png',
-        dest: 'production/img/icons'
-      }
-    },
+    // favicons: {
+    //   options: {
+    //     trueColor: true,
+    //     precomposed: true,
+    //     appleTouchBackgroundColor: "#e2b2c2",
+    //     coast: true,
+    //     windowsTile: true,
+    //     tileBlackWhite: false,
+    //     tileColor: 'auto',
+    //     html: 'production/index.html',
+    //     HTMLPrefix: '/img/icons/'
+    //   },
+    //   icons: {
+    //     src: 'source/img/favicon.512x512.png',
+    //     dest: 'production/img/icons'
+    //   }
+    // },
 
     svgmin: {
       production: {
@@ -302,7 +302,7 @@ module.exports = function(grunt) {
   // refresh preview site when files change
   // necessary tasks are still loaded because of running grunt process (watch), so no need to load plugins
   grunt.registerTask('refresh_styles', [
-    'copy:preview'
+    'less:preview'
   ]);
   grunt.registerTask('refresh_js', [
     'jshint',
@@ -326,7 +326,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-svgmin');
-    grunt.loadNpmTasks('grunt-favicons');
+    // grunt.loadNpmTasks('grunt-favicons');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-copy');
@@ -341,7 +341,7 @@ module.exports = function(grunt) {
       'less:production',
       'useminPrepare',
       'svgmin',
-      'favicons',
+      // 'favicons',
       // 'uglify',
       'filerev',
       'usemin',
