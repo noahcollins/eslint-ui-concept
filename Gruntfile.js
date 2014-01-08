@@ -122,7 +122,7 @@ module.exports = function(grunt) {
 
     watch: {
       styles: {
-        files: 'source/styles/*.less',
+        files: 'source/styles/*.*ss',
         tasks: ['refresh_styles'],
         options: {
           debounceDelay: 250,

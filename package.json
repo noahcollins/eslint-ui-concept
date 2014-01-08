@@ -25,7 +25,8 @@
     "grunt-shell": "~0.6.1",
     "grunt-svgmin": "~0.3.0",
     "grunt-usemin": "~2.0.1",
-    "time-grunt": "~0.2.5"
+    "time-grunt": "~0.2.5",
+    "codemirror": "~3.20.0"
   },
   "main": "index"
 }
