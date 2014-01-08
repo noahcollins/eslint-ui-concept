@@ -8,7 +8,7 @@
   <!-- build:css /styles/main.css -->
   <link rel="stylesheet" href="/styles/main.css">
   <!-- endbuild -->
-  <script src="//use.edgefonts.net/muli:n3,n4.js"></script>
+  <script src="//use.edgefonts.net/source-sans-pro:n3,n4,n6,n7.js"></script>
 </head>
 <body>
 
@@ -21,8 +21,9 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-logo" href="#">
-            <img alt="" src="/img/logo-square.svg" width="52" height="52">ES<span>Lint</span></a>
+          <a href="#" class="navbar-brand">
+            <img alt="" src="/img/logo.svg">
+            <span>ES</span>Lint</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -35,82 +36,107 @@
       </div><!-- /.container -->
     </div><!-- /.navbar -->
 
-    <div class="jumbotron">
-      <div class="container">
-        <h1>A pluggable linting utility for JavaScript</h1>
+    <div class="jumbotron section-intro">
+      <div class="container i2">
+        <div class="row">
+          <div class="col-md-7 col-sm-8">
+            <h1>ESLint</h1>
+            <h2>The pluggable linting utility for JavaScript</h2>
+          </div>
+          <div class="col-md-5 col-sm-4"></div>
+        </div>
       </div>
     </div><!-- /.jumbotron -->
 
-    <hr>
-
     <div class="container">
-      <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-5">
-          <h2>About</h2>
-          <p>Learn more about ESLint and why it came about and the general philosophy behind it. </p>
-          <p><a class="btn btn-primary" href="#" role="button">Learn More »</a></p>
-        </div>
-        <div class="col-md-5">
-          <h2>Architecture</h2>
-          <p>Explains how the code is organized and why it is organized in that way. </p>
-          <p><a class="btn btn-primary" href="#" role="button">Get Started »</a></p>
-        </div>
-        <div class="col-md-1"></div>
-      </div>
 
-      <div class="row">
-        <div class="col-md-6">
-          <h2>Documentation</h2>
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Architecture</a></li>
-            <li><a href="#">Rules List</a></li>
-            <li><a href="#">Command Line Interface</a></li>
-            <li><a href="#">Developer Guide</a></li>
+      <div class="row thedocs">
+        <div class="col-md-3">
+          <h3>Documentation</h3>
+          <h6>Architecture</h6>
+          <ul class="list-unstyled">
+            <li><a href="#">The cli object</a></li>
+            <li><a href="#">The eslint object</a></li>
+            <li><a href="#">Rules</a></li>
+          </ul>
+          <h6>Rules</h6>
+          <ul class="list-unstyled">
+            <li><a href="#">Possible Errors</a></li>
+            <li><a href="#">Best Practices</a></li>
+            <li><a href="#">Sylistic Issues</a></li>
+            <li><a href="#">Legacy</a></li>
+          </ul>
+          <h6>Command Line Interface</h6>
+          <ul class="list-unstyled">
+            <li><a href="#">Options</a></li>
+            <li><a href="#">Ignoring files from linting</a></li>
+          </ul>
+          <h6>Developer Guide</h6>
+          <ul class="list-unstyled">
+            <li><a href="#">Source Code</a></li>
+            <li><a href="#">Development Environment</a></li>
+            <li><a href="#">Unit Tests</a></li>
+            <li><a href="#">Working with Rules</a></li>
+            <li><a href="#">Contributing</a></li>
           </ul>
         </div>
-        <div class="col-md-6"></div>
+
+        <div class="col-md-9">
+
+          <div class="row">
+            <div class="col-md-4">
+              <h3>Rules</h3>
+              <p>ESLint comes with some default rules to get you started. This is the complete list. </p>
+              <p><a class="btn btn-primary" href="#" role="button">See List »</a></p>
+            </div>
+            <div class="col-md-4">
+              <h3>Command Line Interface</h3>
+              <p>ESLint is written to be used primarily for the command line. Learn about its usage here. </p>
+              <p><a class="btn btn-primary" href="#" role="button">CLI Details »</a></p>
+            </div>
+            <div class="col-md-4">
+              <h3>Command Line Interface</h3>
+              <p>ESLint is written to be used primarily for the command line. Learn about its usage here. </p>
+              <p><a class="btn btn-primary" href="#" role="button">CLI Details »</a></p>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row">
+            <div class="col-sm-6 col-md-6">
+              <h2>About</h2>
+              <p>Learn more about ESLint and why it came about and the general philosophy behind it. </p>
+              <p><a class="btn btn-primary" href="#" role="button">Learn More »</a></p>
+            </div>
+            <div class="col-sm-6 col-md-6">
+              <h2>Architecture</h2>
+              <p>Explains how the code is organized and why it is organized in that way. </p>
+              <p><a class="btn btn-primary" href="#" role="button">Get Started »</a></p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6 col-md-6">
+              <h2>Rules</h2>
+              <p>ESLint comes with some default rules to get you started. This is the complete list. </p>
+              <p><a class="btn btn-primary" href="#" role="button">See List »</a></p>
+            </div>
+            <div class="col-sm-6 col-md-6">
+              <h2>Command Line Interface</h2>
+              <p>ESLint is written to be used primarily for the command line. Learn about its usage here. </p>
+              <p><a class="btn btn-primary" href="#" role="button">CLI Details »</a></p>
+            </div>
+          </div>
+
+        </div> <!-- /.col-md-9 -->
       </div>
 
-      <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-sm-6 col-md-5">
-          <h2>Rules</h2>
-          <p>ESLint comes with some default rules to get you started. This is the complete list. </p>
-          <p><a class="btn btn-primary" href="#" role="button">See List »</a></p>
-        </div>
-        <div class="col-sm-6 col-md-5">
-          <h2>Command Line Interface</h2>
-          <p>ESLint is written to be used primarily for the command line. Learn about its usage here. </p>
-          <p><a class="btn btn-primary" href="#" role="button">CLI Details »</a></p>
-        </div>
-        <div class="col-md-1"></div>
-      </div>
     </div><!-- /.container -->
 
     <hr>
 
     <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h3>Rules</h3>
-          <p>ESLint comes with some default rules to get you started. This is the complete list. </p>
-          <p><a class="btn btn-primary" href="#" role="button">See List »</a></p>
-        </div>
-        <div class="col-md-4">
-          <h3>Command Line Interface</h3>
-          <p>ESLint is written to be used primarily for the command line. Learn about its usage here. </p>
-          <p><a class="btn btn-primary" href="#" role="button">CLI Details »</a></p>
-        </div>
-        <div class="col-md-4">
-          <h3>Developer Guide</h3>
-          <p>The developer guide contains information for ESLint developers. If you want to contribute to the project, or even just tinker on your own, this guide explains how to get the source and work with it.</p>
-          <p><a class="btn btn-primary" href="#" role="button">Dev Guide »</a></p>
-        </div>
-      </div>
-
-      <hr>
 
       <footer>
         <ul class="list-inline">
