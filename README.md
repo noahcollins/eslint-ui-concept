@@ -5,7 +5,7 @@ A concept web UI and docs site for [ESLint](https://github.com/nzakas/eslint/) p
 
 ## Install
 
-Clone this repo, then `npm install` and `bower install` to get up and running.
+Clone this repo, then `npm install` and `bower install` to get up it and running. A few dev dependencies have been temporarily removed to ensure Windows compatibility, so there's no mocha tests or favicon generation. Not to worry since this is just a rapid prototype!
 
 ## Grunt Tasks
 
@@ -14,10 +14,6 @@ Clone this repo, then `npm install` and `bower install` to get up and running.
 `grunt production` builds the project and does image optimization, concatenation, file revving, and so on. It uses port 9001.
 
 ## To-Do List
-
-The plan so far. Feel free to add to this list.
-
-- Host this project so people can preview it without building it locally.
 
 ### Documentation browsing experience
 
