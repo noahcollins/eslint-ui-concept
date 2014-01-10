@@ -19,15 +19,21 @@ The plan so far. Feel free to add to this list.
 
 - Host this project so people can preview it without building it locally.
 
-### Mock up the documentation browsing experience.
+### Documentation browsing experience
 
 Progressing well. Next: work with ESLint contributors to define info architecture for docs landing page.
 
-### Demo page experience.
+### Demo page (interactive) experience
 
-- 
+#### Embedded editor component
+- IBM Orion project identified as likely best option: see if it's easily embeddable.
+- Otherwise embed CodeMirror, as it's a known quantity.
+- Include JavaScript editor module.
+- Set a basic syntax highlight theme that matches the current colors.
 
 #### Parser messages
+
+Explore and test different refinements for presenting parser messages. They need to be readable but relatively space-efficient.
 
 per message
 - message in the form \[rule name]\[token]\[count]\[line number]
@@ -45,7 +51,6 @@ filtering
 - automatically collapse certain warnings...
 - collapse to single line or two lines
 - or collapse at certain thresholds like message count
-
 - Try a concept for rule configuration in the web UI. It'll be a challenge due to the sheer number of rules available, but it's worth exploring.
 
 ## The Design
