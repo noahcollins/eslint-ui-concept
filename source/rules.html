@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ESLint UI concept</title>
+  <!-- build:css /styles/main.css -->
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/codemirror.css">
+  <!-- endbuild -->
+  <script src="//use.edgefonts.net/source-sans-pro:n3,n4,n6,n7.js"></script>
+</head>
+<body>
+
+    <div class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="/" class="navbar-brand">
+            <img alt="" src="/img/logo.svg">
+            <span>ES</span>Lint</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">About</a></li>
+            <li><a href="/interactive.html">Demo</a></li>
+            <li><a href="/">Docs</a></li>
+            <li><a href="#">Download</a></li>
+            <li><a href="#">GitHub</a></li>
+          </ul>
+        </div>
+      </div><!-- /.container -->
+    </div><!-- /.navbar -->
+
+    <div class="jumbotron section-intro">
+      <div class="container i2">
+        <div class="row">
+          <div class="col-md-7 col-sm-8">
+            <h1>ESLint</h1>
+            <h2>The pluggable linting utility for JavaScript</h2>
+          </div>
+          <div class="col-md-5 col-sm-4"></div>
+        </div>
+      </div>
+    </div><!-- /.jumbotron -->
+
+    <div class="container">
+
+      <div class="row list-docs">
+        <div class="col-sm-5 col-md-3">
+          <h3>Documentation</h3>
+          <h6>Architecture</h6>
+          <ul class="list-unstyled">
+            <li><a href="#">The cli object</a></li>
+            <li><a href="#">The eslint object</a></li>
+            <li><a href="#">Rules</a></li>
+          </ul>
+          <h6>Rules</h6>
+          <ul class="list-unstyled">
+            <li><a href="#">Possible Errors</a></li>
+            <li><a href="#">Best Practices</a></li>
+            <li><a href="#">Stylistic Issues</a></li>
+            <li><a href="#">Legacy</a></li>
+          </ul>
+          <h6>Command Line Interface</h6>
+          <ul class="list-unstyled">
+            <li><a href="#">Options</a></li>
+            <li><a href="#">Ignoring files from linting</a></li>
+          </ul>
+          <h6>Developer Guide</h6>
+          <ul class="list-unstyled">
+            <li><a href="#">Source Code</a></li>
+            <li><a href="#">Development Environment</a></li>
+            <li><a href="#">Unit Tests</a></li>
+            <li><a href="#">Working with Rules</a></li>
+            <li><a href="#">Contributing</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-7 col-md-9">
+
+          <div class="row">
+            <div class="col-md-12 thedocs">
+              <h2>Rules</h2>
+              <p class="lead">Rules in ESLint are divided into several categories to help you better understand their value. Additionally, not all rules are enabled by default. Those that are not enabled by default are marked as being off.</p>
+
+              <hr>
+
+              <h3>Possible Errors</h3>
+              <p>The following rules point out areas where you might have made mistakes.</p>
+              <ul>
+                <li><a href="">no-console</a> - disallow use of <code>console</code></li>
+                <li><a href="">no-comma-dongle</a> - disallow trailing commas in object literals</li>
+                <li><a href="">no-debugger</a> - disallow use of <code>debugger</code></li>
+                <li><a href="">no-empty</a> - disallow empty statements</li>
+                <li><a href="">no-obj-calls</a> - disallow the use of object properties of the global object (<code>Math</code> and <code>JSON</code>) as functions</li>
+                <li><a href="">no-unreachable</a> - disallow unreachable statements after a return, throw, continue, or break statement</li>
+                <li><a href="">use-isnan</a> - disallow comparisons with the value <code>NaN</code></li>
+                <li><a href="">no-dupe-keys</a> - disallow duplicate keys when creating object literals</li>
+                <li><a href="">no-empty-class</a> - disallow the use of empty character classes in regular expressions</li>
+                <li><a href="">no-function-assign</a> - disallow overwriting functions written as FunctionDeclarations</li>
+                <li><a href="">no-control-regex</a> - disallow control characters in regular expressions</li>
+              </ul>
+
+              <hr>
+
+              <h3>Best Practices</h3>
+              <p>These are rules designed to prevent you from making mistakes. They either prescribe a better way of doing something or help you avoid footguns.</p>
+              <ul>
+                <li><a href="">complexity</a> - specify the maximum cyclomatic complexity allowed in a program</li>
+                <li><a href="">curly</a> - require curly brace for all control statements</li>
+                <li><a href="">dot-notation</a> - encourages use of dot notation whenever possible</li>
+                <li><a href="">eqeqeq</a> - require the use of <code>===</code> and <code>!==</code></li>
+                <li><a href="">guard-for-in</a> - make sure <code>for-in</code> loops have an <code>if</code> statement (off by default)</li>
+                <li><a href="">no-alert</a> - disallow the use of <code>alert</code>, <code>confirm</code>, and <code>prompt</code></li>
+                <li><a href="">no-caller</a> - disallow use of <code>arguments.caller</code> or <code>arguments.callee</code></li>
+                <li><a href="">no-eval</a> - disallow use of <code>eval()</code></li>
+                <li><a href="">no-floating-decimal</a> - disallow the use of leading or trailing decimal points in numeric literals</li>
+                <li><a href="">no-native-reassign</a> - disallow reassignments of native objects</li>
+                <li><a href="">no-new</a> - disallow use of new operator when not part of the assignment or comparison</li>
+                <li><a href="">no-new-func</a> - disallow use of new operator for <code>Function</code> object</li>
+                <li><a href="">no-octal</a> - disallow use of octal literals</li>
+                <li><a href="">no-octal-escape</a> - disallow use of octal escape sequences in string literals, such as <code>var foo = "Copyright \251";</code></li>
+                <li><a href="">no-with</a> - disallow use of the <code>with</code> statement</li>
+                <li><a href="">no-return-assign</a> - disallow use of assignment in <code>return</code> statement</li>
+                <li><a href="">no-self-compare</a> - disallow comparisons where both sides are exactly the same</li>
+                <li><a href="">no-eq-null</a> - disallow comparisons to null without a type-checking operator</li>
+                <li><a href="">no-multi-str</a> - disallow use of multiline strings</li>
+                <li><a href="">no-loop-func</a> - disallow creation of functions within loops</li>
+                <li><a href="">no-empty-label</a> - disallow use of labels for anything other then loops and switches</li>
+                <li><a href="">no-unused-expressions</a> - disallow usage of expressions in statement position</li>
+                <li><a href="">no-script-url</a> - disallow use of javascript: urls./li>
+                <li><a href="">no-proto</a> - disallow usage of <code>__proto__</code> property</li>
+                <li><a href="">no-iterator</a> - disallow usage of <code>__iterator__</code> property</li>
+                <li><a href="">no-else-return</a> - disallow <code>else</code> after a <code>return</code> in an <code>if</code></li>
+                <li><a href="">no-redeclare</a> - disallow declaring the same variable more then once</li>
+                <li><a href="">no-div-regex</a> - disallow division operators explicitly at beginning of regular expression</li>
+                <li><a href="">wrap-iife</a> - require immediate function invocation to be wrapped in parentheses</li>
+              </ul>
+
+              <hr>
+
+              <h3>Strict Mode</h3>
+              <p>These rules relate to using strict mode.</p>
+              <ul>
+                <li><a href="">no-global-strict</a> - disallow the <code>"use strict"</code> pragma in the global scope</li>
+                <li><a href="">strict</a> - require that all functions are run in strict mode</li>
+                <li><a href="">unnecessary-strict</a> - disallow unnecessary use of <code>"use strict";</code> when already in strict mode</li>
+              </ul>
+
+              <hr>
+
+              <h3>Variables</h3>
+              <p>These rules have to do with variable declarations.</p>
+              <ul>
+                <li><a href="">no-catch-shadow</a> - disallow the catch clause parameter name being the same as a variable in the outer scope</li>
+                <li><a href="">no-delete-var</a> - disallow deletion of variables</li>
+                <li><a href="">no-label-var</a> - disallow labels that share a name with a variable</li>
+                <li><a href="">no-shadow</a> - disallow declaration of variables already declared in the outer scope</li>
+                <li><a href="">no-undef</a> - disallow use of undeclared variables unless mentioned in a <code>/*global */</code> block</li>
+                <li><a href="">no-undef-init</a> - disallow use of undefined when initializing variables</li>
+                <li><a href="">no-undef-vars</a> - disallow declaration of variables that are not used in the code</li>
+                <li><a href="">no-use-before-define</a> - disallow use of variables before they are defined</li>
+              </ul>
+
+              <hr>
+
+              <h3>Stylistic Issues</h3>
+              <p>These rules are purely matters of style and are quite subjective.</p>
+              <ul>
+                <li><a href="">camelcase</a> - require camel case names</li>
+                <li><a href="">consistent-this</a> - enforces consistent naming when capturing the current execution context (off by default)</li>
+                <li><a href="">func-style</a> - enforces use of function declarations or expressions</li>
+                <li><a href="">new-cap</a> - require a capital letter for constructors</li>
+                <li><a href="">new-parens</a> - disallow the omission of parentheses when invoking a contructor with no arguments</li>
+                <li><a href="">no-mixed-requires</a> - disallow mixing regular variable and require declarations</li>
+                <li><a href="">no-nested-ternary</a> - disallow nested ternary expressions</li>
+                <li><a href="">no-spaced-func</a> - disallow space between function identifier and application</li>
+                <li><a href="">no-ternary</a> - disallow the use of ternary operators</li>
+                <li><a href="">no-wrap-func</a> - disallow wrapping of none IIFE statements in parents</li>
+                <li><a href="">quotes</a> - specify whether double or single quotes should be used</li>
+                <li><a href="">quote-props</a> - require quotes around object literal property names</li>
+                <li><a href="">semi</a> - require use of semicolons instead of relying on ASI</li>
+                <li><a href="">sort-vars</a> - sort variables within the same declaration block</li>
+                <li><a href="">max-nested-callbacks</a> - specify the maximum depth callbacks can be nested</li>
+                <li><a href="">one-var</a> - allow just one var statement per function</li>
+                <li><a href="">wrap-regex</a> - require regex literals to be wrapped in parentheses</li>
+              </ul>
+
+              <hr>
+
+              <h3>Legacy</h3>
+              <p>The following rules are included for compatibility with <a href="">JSHint</a> and <a href="">JSLint</a>. While the names of the rules may not match up with the JSHint/JSLint counterpart, the functionality is the same.</p>
+              <ul>
+                <li><a href="">max-depth</a> - specify the maximum depth that blocks can be nested (off by default)</li>
+                <li><a href="">max-len</a> - specify the maximum length of a line in your program (off by default)</li>
+                <li><a href="">max-params</a> - limits the number of parameters that can be used in the function declaration (off by default)</li>
+                <li><a href="">max-statements</a> - specify the maximum number of statement allowed in a function (off by default)</li>
+                <li><a href="">no-bitwise</a> - disallow use of bitwise operators (off by default)</li>
+                <li><a href="">no-plusplus</a> - disallow use of unary operators, <code>++</code> and <code>--</code> (off by default)</li>
+              </ul>
+            </div>
+          </div>
+
+        </div> <!-- /.col-md-9 -->
+      </div>
+
+    </div><!-- /.container -->
+
+    <hr>
+
+    <div class="container">
+
+      <footer>
+        <ul class="list-inline">
+          <li><a href="#">Mailing List</a></li>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </footer>
+    </div><!-- /.container -->
+
+  <script src="/js/vendor/jquery-1.10.2.min.js"></script>
+  <script src="/js/vendor/bootstrap.min.js"></script>
+  <script src="/js/vendor/codemirror.js"></script>
+  <script src="/js/vendor/codemirror-js-mode.js"></script>
+  <!-- build:js /js/main.js -->
+  <script src="/js/app/misc.js"></script>
+  <!-- endbuild -->
+</body>
+</html>
