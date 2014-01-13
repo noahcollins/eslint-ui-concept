@@ -66,13 +66,14 @@ module.exports = function(grunt) {
         files: [
           {expand: true, cwd: 'source/', src: ['img/**'], dest: 'preview/'},
           {expand: true, cwd: 'source/', src: ['js/**'], dest: 'preview/'},
-          {expand: true, cwd: 'source/', src: ['*.html'], dest: 'preview/'}
+          {expand: true, cwd: 'source/', src: ['*.html'], dest: 'preview/'},
+          {expand: true, flatten: true, cwd: 'source/', src: ['fonts/**'], dest: 'preview/fonts/', filter: 'isFile'}
         ]
       },
       production: {
         files: [
           {expand: true, cwd: 'source/', src: ['**'], dest: 'production/'},
-          {expand: true, flatten: true, cwd: 'source/', src: ['styles/fonts/**'], dest: 'production/fonts/', filter: 'isFile'}
+          {expand: true, flatten: true, cwd: 'source/', src: ['fonts/**'], dest: 'production/fonts/', filter: 'isFile'}
         ]
       }
     },

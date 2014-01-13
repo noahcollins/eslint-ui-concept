@@ -30,7 +30,7 @@
 // @import "../../bower_components/bootstrap/less/pager.less";
 @import "../../bower_components/bootstrap/less/labels.less";
 @import "../../bower_components/bootstrap/less/badges.less";
-// @import "../../bower_components/bootstrap/less/jumbotron.less";
+@import "../../bower_components/bootstrap/less/jumbotron.less";
 // @import "../../bower_components/bootstrap/less/thumbnails.less";
 @import "../../bower_components/bootstrap/less/alerts.less";
 // @import "../../bower_components/bootstrap/less/progress-bars.less";
@@ -188,7 +188,7 @@
 
 // Common styles
 .alert {
-  text-shadow: 0 1px 0 rgba(255,255,255,.2);
+  // text-shadow: 0 1px 0 rgba(255,255,255,.2);
   // @shadow: inset 0 1px 0 rgba(255,255,255,.25), 0 1px 2px rgba(0,0,0,.05);
   // .box-shadow(@shadow);
 }
@@ -197,7 +197,7 @@
 .alert-styles(@color) {
   // #gradient > .vertical(@start-color: @color; @end-color: darken(@color, 7.5%));
   // border-color: darken(@color, 15%);
-  border-color: darken(spin(@color, -10), 4%)
+  border-color: darken(spin(@color, -8), 4%)
 }
 
 // Apply the mixin to the alerts
@@ -267,6 +267,44 @@
 // refactor when prototyping is finished
 // --------------------------------------------------
 
+// Mixin for generating badge styles
+.badge-styles(@color) {
+  background-color: lighten(@color, 8%)
+}
+
+// Apply the mixin to the badges
+.badge-success    { .badge-styles(darken(@brand-success, 7%)); }
+.badge-info       { .badge-styles(@state-info-bg); }
+.badge-warning    { .badge-styles(@state-warning-bg); }
+.badge-danger     { .badge-styles(darken(spin(@brand-danger, -2), 5%)); }
+
+.badge {
+  min-width: 10px;
+  padding: 5px 7px 3px 7px;
+  text-shadow: none;
+}
+
+.badge > a {
+  color: #fff;
+}
+
+.alert {
+  margin-bottom: floor((@line-height-computed) / 2);
+
+  > .badge {
+    float: right;
+    top: 1px;
+  }
+  > .badge + .badge {
+    margin-right: 5px;
+  }
+}
+
+.thedocs code {
+  color: desaturate(darken(@brand-info, 7%), 39%);
+  background-color: desaturate(lighten(@state-info-bg, 2%), 29%);
+}
+
 .code-warning {
   color: darken(@brand-warning, 2%);
   background-color: darken(@state-warning-bg, 5%);
@@ -296,7 +334,7 @@ textarea {
   font-size: @font-size-small;
   line-height: inherit;
   width: 100%;
-  height: 360px;
+  height: 390px;
   border-radius: @border-radius-small;
   border: 1px solid lighten(@brand-primary, 42%);
   padding: 9px;
@@ -336,7 +374,7 @@ textarea {
   }
 }
 
-.alert a {
+a.alert {
   &:hover,
   &:focus {
     text-decoration: none;
