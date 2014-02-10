@@ -6,6 +6,7 @@
 /bower_components/
 /test/
 
+*.sublime-project
 
 # OS generated files #
 ######################
